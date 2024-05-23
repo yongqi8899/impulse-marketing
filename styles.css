@@ -17,28 +17,54 @@ header {
 section {
     background-color: lightgrey;
     margin-bottom: 10px;
+
+    
 }
 
+
 section.contact {
-    padding: 1rem;
+    padding: 2rem;
 }
+
+section.contact h3 {
+    margin-bottom: 1rem;
+}
+
 
 section.contact FORM {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
 }
 
-section.contact label {
+section.contact .form-item {
+    margin-bottom: 1rem;
+}
 
+section.contact  .contact-data,
+section.contact  .contact-message {
+    flex-basis: 50%;
+}
 
+section.contact  label {
+    width:20%;
+    display: inline-block;
+}
+
+section.contact input {
+    width: 60%;
+    line-height: 1.7rem;
+}
+
+.button-item {
+    width: 30%;
 }
 
 section.contact input {
 
-
 }
-
-
 
 
 footer {
