@@ -84,6 +84,9 @@ footer {
     color: white;
 }
 
+
+/* HENRYS CODE */
+
 header {
     padding: 2rem 10vw;
     display: flex;
@@ -150,6 +153,7 @@ nav a {
 
 .reference h2 {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 
@@ -164,3 +168,5 @@ nav a {
 .reference img {
     height: 100px;
 }
+
+/* _________________________  */
