@@ -35,12 +35,12 @@ section.contact FORM {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
-
+    justify-content: flex-start;
 }
 
 section.contact .form-item {
     margin-bottom: 1rem;
+    display: flex;
 }
 
 section.contact  .contact-data,
@@ -49,21 +49,33 @@ section.contact  .contact-message {
 }
 
 section.contact  label {
-    width:20%;
+    min-width:30%;
     display: inline-block;
 }
 
-section.contact input {
-    width: 60%;
+
+
+section.contact input,
+section.contact textarea {
+    min-width: 60%;
     line-height: 1.7rem;
 }
 
-.button-item {
-    width: 30%;
+section.contact textarea {
+    height: 5rem;
+    line-height: 1rem;
 }
 
-section.contact input {
+.button-item {
+    width: 100%;
+}
 
+.button-item button {
+ padding:.5rem;
+ background-color: blue;
+ color: white;
+ font-weight: 800;
+ border: none;
 }
 
 
