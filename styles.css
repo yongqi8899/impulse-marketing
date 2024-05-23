@@ -1,25 +1,86 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue: oklch(49.55% 0.192 280.49);
+  --green: oklch(0.85 0.24 147.2);
+  --orange: oklch(0.81 0.16 82.69);
+  --white: oklch(92.42% 0.001 197.14);
+  --black: oklch(28.09% 0 0);
+  --fancy-gradient: linear-gradient(to top, var(--blue), var(--green));
 }
 
 .wrapper {
-    width: 80vw; 
-    margin: 0 auto; 
+  width: 80vw;
+  margin: 0 auto;
 }
 
 header {
-    background-color: darkgray
-    margin-bottom: 10px;
+  background-color: darkgray;
+  margin-bottom: 10px;
 }
 
 section {
-    background-color: lightgrey;
-    margin-bottom: 10px;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+}
+h2,
+h3 {
+  margin-bottom: 1rem;
+  color: transparent;
+  font-weight: bold;
+  background-image: var(--fancy-gradient);
+  background-clip: text;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+}
+#introduction {
+  display: flex;
+  gap: 1rem;
+}
+#introduction figure img {
+  width: 100%;
+  clip-path: xywh(0 5px 100% 75% round 15% 0);
+}
+#introduction .discribe {
+  width: 100%;
+  line-height: 1.5rem;
 }
 
+.cards-parent {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  gap: 1rem;
+}
+.card {
+  border: 1px solid var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  flex-basis: 20rem;
+}
+
+.card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card figcaption {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card:hover figure {
+    scale: 1.04;
+    transition: scale 900ms ease;
+}
 footer {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
