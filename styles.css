@@ -24,6 +24,7 @@ section {
 
 section.contact {
     padding: 2rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 section.contact h3 {
@@ -35,35 +36,49 @@ section.contact FORM {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;    
+    
 }
 
 section.contact .form-item {
-    margin-bottom: 1rem;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 section.contact  .contact-data,
 section.contact  .contact-message {
-    flex-basis: 50%;
+    flex-basis: 47%;
 }
 
 section.contact  label {
-    min-width:30%;
     display: inline-block;
+    padding:  0.6rem;
+    font-size: 0.9em; 
 }
 
 
 
 section.contact input,
 section.contact textarea {
-    min-width: 60%;
-    line-height: 1.7rem;
+    min-width: 70%;
+    padding: 0.6rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid darkgray;
+
 }
 
+section.contact input:focus,
+section.contact textarea:focus {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+
+
 section.contact textarea {
-    height: 5rem;
-    line-height: 1rem;
+    height: 6.9rem;
 }
 
 .button-item {
@@ -72,10 +87,13 @@ section.contact textarea {
 
 .button-item button {
  padding:.5rem;
- background-color: blue;
+ background-color: black;
  color: white;
- font-weight: 800;
+ font-weight: 600;
+ text-transform: uppercase;
  border: none;
+ float: right;
+ margin-top: 1rem;
 }
 
 
