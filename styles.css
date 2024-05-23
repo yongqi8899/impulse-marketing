@@ -10,7 +10,7 @@
 }
 
 header {
-    background-color: darkgray
+    background-color: darkgray;
     margin-bottom: 10px;
 }
 
@@ -22,4 +22,85 @@ section {
 footer {
     background-color: black;
     color: white;
+}
+
+header {
+    padding: 2rem 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 50px;
+    filter: invert(1);
+    margin-right: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+nav a {
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 5px;
+    color: inherit;
+}
+
+
+.hero {
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-left {
+    border: 1px solid;
+    padding: 2rem;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.hero-right {
+    border: 1px solid;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.reference {
+    padding: 2rem;
+}
+
+.reference h2 {
+    margin-bottom: 2rem;
+}
+
+
+.reference div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.reference img {
+    height: 100px;
 }
