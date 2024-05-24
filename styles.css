@@ -38,6 +38,7 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+
 #introduction {
   display: flex;
   flex-wrap: wrap;
@@ -68,11 +69,13 @@ h3 {
   flex: 1 1 30rem;
   line-height: 1.6rem;
 }
+
+/* Service Layout */
 .cards-parent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  grid-column: middle;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 2rem;
 }
 .card {
   display: flex;
