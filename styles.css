@@ -41,23 +41,37 @@ h3 {
 #introduction {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 #introduction .image {
+  display: flex;
+  flex: 1 1 25rem;
+  vertical-align: middle;
+  margin: 0 auto;
   width: 100%;
-  max-width: 45rem;
-  clip-path: xywh(0 5px 100% 75% round 15% 0);
+  height: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  object-position: center;
+}
+#introduction .image figure img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
 }
 #introduction .discribe {
-  width: 100%;
-  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30rem;
   line-height: 1.6rem;
 }
-
 .cards-parent {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 .card {
@@ -68,9 +82,8 @@ h3 {
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
-  flex-basis: 20rem;
+  flex: 1 1 30rem;
 }
-
 .card figure img {
   width: 100%;
   height: auto;
