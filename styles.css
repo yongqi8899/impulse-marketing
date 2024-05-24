@@ -1,12 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue: oklch(49.55% 0.192 280.49);
+  --green: oklch(0.85 0.24 147.2);
+  --orange: oklch(0.81 0.16 82.69);
+  --white: oklch(92.42% 0.001 197.14);
+  --black: oklch(28.09% 0 0);
+  --fancy-gradient: linear-gradient(to top, var(--blue), var(--green));
 }
 
 .wrapper {
-    width: 80vw; 
-    margin: 0 auto; 
+  width: 80vw;
+  margin: 0 auto;
 }
 
 header {
@@ -15,8 +23,8 @@ header {
 }
 
 section {
-    background-color: lightgrey;
-    margin-bottom: 10px;
+  background-color: lightgrey;
+  margin-bottom: 10px;
 
     
 }
@@ -96,10 +104,88 @@ section.contact textarea {
  margin-top: 1rem;
 }
 
+h2,
+h3 {
+  margin-bottom: 1rem;
+  color: transparent;
+  font-weight: bold;
+  background-image: var(--fancy-gradient);
+  background-clip: text;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+}
 
+#introduction {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#introduction .image {
+  display: flex;
+  flex: 1 1 25rem;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  object-position: center;
+}
+#introduction .image figure img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+#introduction .discribe {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30rem;
+  line-height: 1.6rem;
+}
+
+/* Service Layout */
+.cards-parent {
+  grid-column: middle;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  flex: 1 1 30rem;
+}
+.card figure img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.card figcaption {
+  font-weight: 900;
+}
+.card p {
+  display: flex;
+  padding: 1rem;
+}
+.card:hover figure {
+  scale: 1.04;
+  transition: scale 900ms ease;
+}
 footer {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 
