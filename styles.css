@@ -268,28 +268,64 @@ nav a {
 
 
 .hero {
-    padding: 4rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+  padding: 4rem 0rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero h1 {
+  margin: 1rem 0;
+  font-size: 36px;
+}
+
+.hero h2 {
+  margin: 1rem 0;
+}
+
+.hero button {
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--gold);
+  font-weight: 500;
+  margin-top: 1rem;
 }
 
 .hero-left {
-    border: 1px solid;
-    padding: 2rem;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+  width: 40%;
+  border: 1px solid var(--white);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 20px;
 }
 
 .hero-right {
-    border: 1px solid;
-    padding: 2rem;
-    border-radius: 15px;
+  width: 60%;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1139px) {
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-right {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: 20px;
 }
 
 .reference {
