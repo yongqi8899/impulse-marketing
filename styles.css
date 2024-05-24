@@ -9,7 +9,7 @@
 :root {
   --blue: oklch(49.55% 0.192 280.49);
   --green: oklch(0.85 0.24 147.2);
-  --gold: oklch(0.87 0.18 90.85);
+  --orange: oklch(0.81 0.16 82.69);
   --white: oklch(92.42% 0.001 197.14);
   --black: oklch(28.09% 0 0);
   --fancy-gradient: linear-gradient(to top, var(--blue), var(--green));
