@@ -10,6 +10,8 @@
   --blue: oklch(49.55% 0.192 280.49);
   --orange: oklch(0.81 0.16 82.69);
   --white: oklch(92.42% 0.001 197.14);
+  --darkgray: oklch(100, 0, 0);
+  --gray: hwb(0 100% 0% / 0.5);
   --black: oklch(28.09% 0 0);
 }
 
@@ -93,7 +95,7 @@ section.contact textarea {
     min-width: 70%;
     padding: 0.6rem;
     border: none;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--darkgray);
     border-bottom: 1px solid darkgray;
 
 }
@@ -372,12 +374,12 @@ nav a {
   margin: 5px 0;
 }
 .footer-contact p a {
-  color: #007BFF;
+  color: var(--black);
   text-decoration: none;
   font-weight: bold;
 }
 .footer-legal a {
-  color: #007BFF;
+  color: var(--black);
   text-decoration: none;
 }
 .footer-legal a:hover {
