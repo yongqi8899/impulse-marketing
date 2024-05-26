@@ -374,12 +374,12 @@ nav a {
   margin: 5px 0;
 }
 .footer-contact p a {
-  color: #007BFF;
+  color: var(--black);
   text-decoration: none;
   font-weight: bold;
 }
 .footer-legal a {
-  color: #007BFF;
+  color: var(--black);
   text-decoration: none;
 }
 .footer-legal a:hover {
