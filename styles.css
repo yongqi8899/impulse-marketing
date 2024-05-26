@@ -11,7 +11,6 @@
   --orange: oklch(0.81 0.16 82.69);
   --white: oklch(92.42% 0.001 197.14);
   --black: oklch(28.09% 0 0);
-  --fancy-gradient: linear-gradient(to top, var(--blue), var(--green));
 }
 
 .wrapper {
@@ -27,10 +26,7 @@ header {
 
 section {
   margin-bottom: 10px;
-
-    
 }
-
 
 /* price */
 
@@ -39,7 +35,7 @@ section {
   flex-direction: column;
 }
 .package-parent {
-   grid-column: middle;
+  grid-column: middle;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   gap: 2rem;
@@ -49,8 +45,7 @@ section {
   --color: color-mix(in oklch, var(--blue), var(--green));
   height: 15rem;
   padding: 1rem;
-  background-color: var(--blue);
-  color: var(--white);
+  background-color: var(--orange);
 }
 .package:hover {
   scale: 1.05;
@@ -58,8 +53,6 @@ section {
   filter: drop-shadow(0px 0px 5px var(--color));
   transition: scale 900ms ease;
 }
-
-
 
 section.contact {
     padding: 2rem;
@@ -69,13 +62,11 @@ section.contact h3 {
     margin-bottom: 1rem;
 }
 
-
 section.contact FORM {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;    
-    
 }
 
 section.contact .form-item {
@@ -84,7 +75,6 @@ section.contact .form-item {
     justify-content: space-between;
     
 }
-
 section.contact  .contact-data,
 section.contact  .contact-message {
     flex-basis: 47%;
@@ -356,7 +346,7 @@ nav a {
   color: #333;
   padding: 40px 0;
   text-align: center;
-  border-top: 5px solid #007BFF;
+  border-top: 5px solid var(--orange);
 }
 .footer-content {
   max-width: 1000px;
