@@ -399,7 +399,7 @@ nav a {
   color: #666;
 }
 .footer-bottom a {
-  color: #007BFF;
+  color: var(--orange);
   text-decoration: none;
 }
 .footer-bottom a:hover {
